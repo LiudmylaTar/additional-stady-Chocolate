@@ -1,3 +1,263 @@
-p {
-    color: lightgreen
+
+body {
+    font-family:"Montserrat", sans-serif;
+    background-color: #fafafa;
+    color: #111111;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  a{
+    text-decoration: none;
+    color: currentColor;
+  }
+  ul,
+  ol{
+    list-style-type: none;
+    margin: 0;
+  padding: 0;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  address{
+    font-style: normal;
+      }
+  button{
+    cursor: pointer;
+  }
+/* #region Common */
+  .section-titel{
+font-weight: 600;
+font-size: 24px;
+line-height: 117%;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #111;
+  }
+  .section-titel-accent{
+    color: #fd9222;
+  }
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+.container {
+  width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+  background-color: rgba(173, 216, 230, 0.4);;
 }
+
+.logo-head{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 600;
+  background: transparent;
+}
+.btn-buy {
+  color: #fff;
+  background: var(--orange, #fd9222);
+}
+.btn-buy:hover,
+.btn-buy:focus {
+  color: #fd9222;
+  background: #fcf1e0;
+}
+.btn-made {
+  color: #ffffff;
+}
+.btn-made:hover,
+.btn-made:focus {
+  color: #fd9222;
+}
+.btn-review {
+  color: #111;
+  font-size: 18px;
+}
+.btn-review:hover,
+.btn-review:focus {
+  color: #ffffff;
+  background: #fd9222;
+}
+
+.scroll-down {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+}
+.scroll-down:hover,
+.scroll-down:focus {
+  color: #fd9222;
+}
+
+.navigation-link{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #fd9222;
+}
+/* #region Hero */
+.hero {
+  background: rgba(17, 17, 17, 0.4);
+}
+
+.main-titel{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+
+.benefits{
+  background: #1e1823;
+}
+
+.benefits-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  color: #fff;
+}
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ingridients-subtitle{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.made-subtitel {
+font-size: 18px;
+line-height: 133%;
+color: #111;
+}
+.made-list {
+}
+.made-item {
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
+color: #111;
+}
+
+.products-caption {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.products-type {
+  color: rgba(17, 17, 17, 0.7);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+}
+.products-btn {
+  font-size: 14px;
+  font-weight: 600;
+  background: #fafafa;
+}
+
+.top-sellers-caption {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;}
+
+  .reviews-author {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    text-align: center;
+  }
+  .reviews-comment {
+    color: rgba(17, 17, 17, 0.7);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+  }
+
+  .footer {
+    background: #1e1823;
+  }
+  .footer-slogan {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+  }
+  .footer-slogan-accent {
+    color: #fd9222;
+  }
+  .footer-caption {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.29;
+  }
+  .footer-contacts-link {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+  .footer-contacts-link:hover,
+  .footer-contacts-link:focus {
+    color: #fd9222;
+  }
+ 
+  .footer-nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+  }
+  .footer-nav-link:hover,
+  .footer-nav-link:focus {
+    color: #fd9222;
+  }
