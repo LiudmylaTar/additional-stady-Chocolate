@@ -26,7 +26,7 @@
 
   <body>
     <header class="header" id="home">
-      <div class="containers">  
+      <div class="containers header-container">  
         <nav class="nav-heder">
             <a class="logo-head" href="./index.html"> SIMPLY CHOCOLATE 
                 <img class="logo-icon" src="./images/icons/logo.svg" alt="chocolate-bar">
@@ -66,21 +66,23 @@
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <div class="container">
+        <div class="hero-container containers">
         <h1 class="main-titel">Treat yourself or a loved one to 
-            our finest ingredients for a moment 
+            our$nbsp;finest ingredients for a moment 
             of pure delight!
         </h1>
+        <div class="hero-wraper">
         <button class="btn btn-buy" type="button">Buy now</button>
         <button class="btn btn-made" type="button">How it’s made</button>
         <a class="scroll-down" href="#section_benef">scroll down 
             <img src="./images/icons/arrow-down.svg" alt="scroll down icon">
         </a>
     </div>
+    </div>
       </section>
       <!-- Benefits  -->
       <section class="benefits" id="section_benef">
-        <div class="container">
+        <div class="containers">
         <h2 class="visually-hidden">Benefits of simply chocolate-bar</h2>
         <ul class="benefits-list">
             <li class="benefits-item">
@@ -109,12 +111,13 @@
     </div>
       </section>
       <!-- Ingridients section  -->
-      <section>
-        <h2 class="section-titel">It all adds up to one exceptional <span class="section-titel-accent">taste</span> sensation</h2>
+      <section class="ingridients">
+        <div class="containers">
+        <h2 class="section-title">It all adds up to one exceptional <span class="section-title-accent">taste</span> sensation</h2>
        <ul class="ingridients-list">
         <li class="ingridients-item">
             <img class="ingridient-img" src="./images/ingridients/img-1.png" alt="chocolate bar" width="214" height="160">
-            <h3 class="Ingridients-subtitle">MILK CHOCOLATE</h3>
+            <h3 class="ingridients-subtitle">MILK CHOCOLATE</h3>
         </li>
         <li class="ingridients-item">
             <img class="ingridient-img" src="./images/ingridients/img-2.png" alt="milk" width="214" height="160">
@@ -141,14 +144,19 @@
             <h3 class="ingridients-subtitle">COCONUT OIL</h3>
         </li>
        </ul>
-
+     </div>
       </section>
       <!-- made  -->
       <section class="made" id="made">
-        <h2 class="section-titel">How it’s <span class="section-titel-accent">made?</span></h2>
-        <img src="./images/made.jpg" alt="How it’s made?"
+        <div class="containers">  
+        <h2 class="section-title">How it’s <span class="section-title-accent">made?</span></h2>
+        <div class="made-wrapper">
+        <div class="made-left-side">
+            <img src="./images/made.jpg" alt="How it’s made?"
         width="600"
         height="400" />
+    </div>
+    <div class="made-right-side"> 
         <h3 class="made-subtitel">Try  our chocolates today and discover the perfect balance of flavor</h3>
         <ol class="made-list">
             <li class="made-item">
@@ -162,12 +170,14 @@
             <li class="made-item">
                 Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
         </ol>
-       
+      </div>
+    </div>
+   </div>
     </section>
       <!-- products  -->
-      <section>
-        <div class="container">
-        <h2 class="section-titel product-titel">Our <span class="section-titel-accent">products</span></h2>
+      <section class="products">
+        <div class="containers">
+        <h2 class="section-title product-title">Our <span class="section-title-accent">products</span></h2>
         <ul class="products-list">
             <li class="products-item">
                 <img class="products-img" src="./images/product/img-1.jpg" alt="Dark chocolate bar" width="231" height="201">
@@ -212,7 +222,7 @@
                 <button class="products-btn" type="button">66 UAH</button>
             </li>
             <li class="products-item">
-                <img src="./images/product/img-8.jpg" alt="White chocolate bar" width="231" height="201">
+                <img class="products-img" src="./images/product/img-8.jpg" alt="White chocolate bar" width="231" height="201">
                 <h3 class="products-caption">Classic</h3>
                 <p class="products-type">White chocolate</p>
                 <button class="products-btn" type="button">54 UAH</button>
@@ -222,8 +232,8 @@
       </section>
       <!-- Section top seller -->
        <section class="top-sellers">
-        <div class="container">
-        <h2 class="section-titel top-sellers-title"> <span class="section-title-accent">Top</span> sellers</h2>
+        <div class="containers">
+        <h2 class="section-title top-sellers-title"> <span class="section-title-accent">Top</span> sellers</h2>
         <ul class="top-sellers-list">
             <li class="top-sellers-item">
                 <img class="sellers-img" src="./images/top-sellers/img-1.jpg" alt="CHOCOLATE WITH NUTS" width="368" height="464">
@@ -242,7 +252,7 @@
        </section>
       <!-- Section reviews -->
       <section class="reviews" id="loved">
-        <div class="container">
+        <div class="containers">
         <h2 class="reviews-title section-title"> <span class="section-title-accent">Chocolate</span> is loved</h2>
        <ul class="reviews-list">
         <li class="reviews-item">
@@ -267,7 +277,7 @@
         </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="containers">
         <p class="footer-slogan">
             <span class="footer-slogan-accent">Chocolate</span> a delicious cure for a bad day
         </p>
