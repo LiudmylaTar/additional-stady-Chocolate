@@ -1,2 +1,2 @@
-# additional-stady-Chocolate
+# additional-study-Chocolate
 Simply Chocolate
