@@ -330,7 +330,7 @@
         </div>
      </li>
        </ul>
-       <button class="btn btn-review" type="button">Leave a review</button>  
+       <button class="btn btn-review js-open-modal" type="button">Leave a review</button>  
     </div>
 </section>
         </main>
@@ -405,27 +405,84 @@
         </div>
     </footer>
     <!-- Modal windows -->
-    <div class="backdrop">
+    <div class="backdrop js-modal">
         <div class="modal">
-            <button class="modal-button">
+            <button class="modal-button js-close-modal">
                 <svg class="modal-close-icon" width="28" height="28">
                     <use href="./images/icons.svg#icon-x-close"></use>
                   </svg>
             </button>
             <p class="modal-caption">LEAVE A REVIEW ABOUT <span class="accent"> OUR CHOCOLATE </span></p>
-            <div class="modal-form-field">
-                <form class="modal-form" name="review">
+              <form class="modal-form" name="review">
+                <div class="modal-form-field">
                     <label class="modal-form-label" for="user-name">Name</label>
                     <div class="modal-form-wrapper">
-                        <input class="modal-form-input" type="text" id="user-name" name="user-name"/>
+                        <input class="modal-form-input" 
+                        type="text" id="user-name"
+                         name="user-name"
+                         minlength="3"
+                         required
+                          placeholder=" "/>
                         <svg class="modal-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-user"></use>
                           </svg>
+                          <svg class="error-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-error"></use>
+                          </svg>
                     </div>
-            </div>     
+            </div> 
+            <div class="modal-form-field">
+                <label class="modal-form-label" for="user-email">Email</label>
+                <div class="modal-form-wrapper">
+                    <input class="modal-form-input"
+                     type="email" id="user-email" name="user-email"
+                     required
+                     placeholder=" "/>
+                    <svg class="modal-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-email"></use>
+                      </svg>
+                </div>
+        </div>  
+
+        <div class="modal-form-field">
+            <label class="modal-form-label" for="phone-number">Phone number</label>
+            <div class="modal-form-wrapper">
+                <input class="modal-form-input" type="tel" id="phone-number" name="user-phone"/>
+                <svg class="modal-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+            </div>
+    </div> 
+     <div class="modal-form-field">
+        <lable class="modal-form-label" for="user-message">Comment</lable>
+        <textarea 
+        name="user-message" id="user-message" 
+        class="modal-form-message"
+        placeholder="Enter text"
+        ></textarea>
+     </div>
+
+     <div class="modal-form-agreement">
+        <input class="visually-hidden" 
+        type="checkbox" 
+        name="user-agreement" 
+        id="user-agreement"/>
+        <label class="modal-form-agreement-text" for="user-agreement">
+            <span class="modal-form-checkbox">
+    <svg class="modal-form-checkbox-icon" width="10" height="10">
+    <use href="./images/icons.svg#check-mark"></use>
+
+</svg>
+            </span>
+            I accept the terms and conditions of the 
+            <a href="#" class="modal-form-link" target="_blank">Privacy Policy</a> 
+
+        </label>
+     </div>
+        <button class="btn btn-buy" type="submit">Send</button>
             </form>
         </div>
-
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
